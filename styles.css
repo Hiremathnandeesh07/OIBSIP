@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #dee3e7;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 10px;
+
+  width: 340px;
+
+  background: white;
+
+  border-radius: 5px;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding-bottom: 10px;
+}
+
+.container .app-name {
+  height: 50px;
+
+  width: 100%;
+
+  border-top-left-radius: 5px;
+
+  border-top-right-radius: 5px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  padding-left: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.container .from,
+.container .to {
+  height: 70px;
+
+  position: relative;
+
+  top: 50px;
+}
+
+.container .from .from-select,
+.container .to .to-select {
+  all: unset;
+
+  height: 35px;
+
+  width: 130px;
+
+  color: black;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 10px;
+
+  font-size: 13px;
+
+  background: rgba(220, 220, 220, 0.4);
+
+  border: 1px solid rgba(220, 220, 220, 0.8);
+
+  float: right;
+
+  margin-top: 20px;
+
+  margin-right: 10px;
+
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.container .from .from-input,
+.container .to .to-input {
+  all: unset;
+
+  height: 35px;
+
+  width: 120px;
+
+  border: 1px solid grey;
+
+  margin-top: 20px;
+
+  text-align: right;
+
+  padding-right: 20px;
+
+  border-radius: 2px;
+
+  margin-left: 10px;
+}
+
+.container .from .from-options,
+.container .to .to-options {
+  position: absolute;
+}
+
+.container .from .from-options,
+.container .to .to-options {
+  width: 135px;
+
+  height: 100px;
+
+  background: #f5f5f5;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  border: 1px solid grey;
+}
+
+.container .from .from-options,
+.container .to .to-options {
+  position: absolute;
+
+  right: 13px;
+
+  z-index: 1;
+
+  margin-top: 5px;
+
+  transform: scale(0);
+
+  transform-origin: top;
+
+  opacity: 0;
+
+  transition: all 0.2s;
+}
+
+.container .from .from-options.from-options-active,
+.container .to .to-options.to-options-active {
+  transform: scale(1);
+
+  opacity: 1;
+
+  transition: all 0.2s;
+}
+
+.container .from .from-options li,
+.container .to .to-options li {
+  list-style-type: none;
+
+  height: 33px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 12px;
+
+  border-bottom: 1px solid rgb(232, 229, 229);
+
+  cursor: pointer;
+}
+
+.container .formula {
+  height: 60px;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 40px;
+
+  padding-left: 10px;
+}
+
+.container .formula span {
+  margin-left: 8px;
+
+  font-size: 13px;
+}
+
+.container .formula div {
+  height: 23px;
+
+  width: 70px;
+
+  color: rgb(239, 239, 239);
+
+  background: #000000b1;
+
+  border-radius: 2px;
+
+  text-transform: capitalize;
+
+  padding: 3px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 11px;
+}
+
+.container .from .fa-chevron-down,
+.container .to .fa-chevron-down {
+  color: #a9a9a9;
+
+  font-size: 11px;
+
+  position: absolute;
+
+  top: 32px;
+
+  right: 20px;
+}

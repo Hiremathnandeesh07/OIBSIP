@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="app-name">
+
+            <h2>Temperature Converter </h2>
+
+        </div>
+
+        <div class="from">
+
+            <input type="number" class="from-input" placeholder="0" value="0">
+
+            <input type="text" class="from-select" value="Degree Celsius" readonly>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+            <div class="from-options">
+
+                <li id="Deg">Degree Celsius</li>
+
+                <li id="Fahren">Fahrenheit</li>
+
+                <li id="Kel">Kelvin</li>
+
+            </div>
+
+        </div>
+
+        <div class="to">
+
+            <input type="number" class="to-input" placeholder="0" value="32.00" readonly>
+
+            <input type="text" class="to-select" value="Fahrenheit" readonly>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+            <div class="to-options">
+
+                <li id="Cel">Degree Celsius</li>
+
+                <li id="Fahren">Fahrenheit</li>
+
+                <li id="Kel">Kelvin</li>
+
+            </div>
+
+        </div>
+
+        <div class="formula">
+
+            <div>Formula</div>
+
+            <span>(0°C × 9/5) + 32 = <strong>32°F</strong></span>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
